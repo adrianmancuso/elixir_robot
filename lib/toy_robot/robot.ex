@@ -1,3 +1,3 @@
 defmodule ToyRobot.Robot do
-  defstruct position: nil, direction: nil
+  defstruct position: nil, facing: nil
 end

@@ -11,12 +11,12 @@ defmodule ToyRobot.RobotTest do
   end
 
   test "robot can store position" do
-    robbie = %ToyRobot.Robot{position: {2, 4}, direction: "NORTH"}
+    robbie = %ToyRobot.Robot{position: {2, 4}, facing: "NORTH"}
     assert robbie.position == {2, 4}
   end
 
-  test "robot can store direction" do
-    robbie = %ToyRobot.Robot{position: {2, 4}, direction: "NORTH"}
-    assert robbie.direction == "NORTH"
+  test "robot can store facing direction" do
+    robbie = %ToyRobot.Robot{position: {2, 4}, facing: "NORTH"}
+    assert robbie.facing == "NORTH"
   end
 end
